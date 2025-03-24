@@ -12,8 +12,7 @@ var schema = new mongoose.Schema({
     },
     gender : String,
     status : String
-})
+}, { collection: 'userdb' }); // <-- Explicitly set collection name
 
-const Userdb = mongoose.model('userdb', schema);
-
+const Userdb = mongoose.model('Userdb', schema); // Keep model name as 'Userdb'
 module.exports = Userdb;

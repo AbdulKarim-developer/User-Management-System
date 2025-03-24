@@ -1,5 +1,5 @@
 
-# Web Application Security Enhancement Project
+# User Management System
 This project focuses on enhancing the security of a web application by implementing various measures such as input validation, password hashing, authentication mechanisms, and penetration testing. The goal is to identify and mitigate potential vulnerabilities, ensuring the application adheres to legal and professional standards.
 
 ## Table of Contents

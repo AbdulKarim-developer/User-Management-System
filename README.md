@@ -95,11 +95,3 @@ Basic penetration testing was conducted using Nmap to identify open ports and po
 ## Logging
 
 Application activities are logged using the winston library, facilitating monitoring and auditing. Logs are stored in `security.log` for review.
-
-## Contributing
-
-Contributions are welcome. Please fork the repository and create a pull request with your proposed changes. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

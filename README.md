@@ -12,8 +12,6 @@ This project focuses on enhancing the security of a web application by implement
 - [Security Measures](#security-measures)
 - [Penetration Testing](#penetration-testing)
 - [Logging](#logging)
-- [Contributing](#contributing)
-- [License](#license)
 
 
 ![alt text](https://github.com/FaizAlam/user-management-system/blob/master/Images/Img1.png?raw=true)

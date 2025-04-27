@@ -7,10 +7,24 @@ const dotenv = require('dotenv')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const path = require('path')
+const csrf = require('csurf');
+const cookieParser = require('cookie-parser');
 
 const connectDB = require('./server/database/connection')
 
 const app = express()
+
+app.use(cookieParser()); // parse cookies
+const csrfProtection = csrf({ cookie: true });
+
+// Apply csrfProtection to all POST/PUT/DELETE routes
+app.use(csrfProtection);
+
+// Make token available to your views (EJS)
+app.use((req, res, next) => {
+  res.locals.csrfToken = req.csrfToken();
+  next();
+});
 
 // Secure HTTP Headers
 app.use(helmet());
